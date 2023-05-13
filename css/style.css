@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+* , html, body, p {
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 5px;
+    padding: 0;
+}
+body{
+    margin-top: 15%;
+    background-color: black;
+}
+/* Heading */
+.my-heading {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color:black;
+    color: white;color: #fff;
+    text-shadow:  0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+    font-size: 40px;
+    text-align: center;
+  }
+/* Grid */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+
+.calc-container {
+    display: grid;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+/* Input */
+#input {
+    width: 100%;
+    height: 2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FDFEFE;
+    padding-right: 10px;
+    font-size: 3em;
+    text-align: right;
+    background-color:  #e77c18;
+    transition: all 0.3s ease-in;
+    border-radius: 20px;
+}
+#buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: center;
+
+}
+
+/* Btn's */
+.btn {
+    display: flex;
+    font-size: 1.2em;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 45px;
+    transition: all 0.3s ease-in;
+    border: 5px solid rgba(251, 253, 255, 0.171);
+    border-radius: 20px;
+
+}
+
+.dot {
+    grid-column: span 2;
+}
+
+.equal {
+    grid-row: span 2;
+}
+
+.btn-num {
+    background-color: black;
+    color:white;
+}
+
+.btn-num:hover {
+    background-color:#00ff00;
+}
+
+.btn-operator {
+
+    background-color:  lightgray;
+    color: #ffffff;
+    font-size:25px;
+}
+
+.btn-operator:hover {
+    background-color:  #00ff00 !important
+}
+
+.equal{
+    background-color: #e77c18;
+}
